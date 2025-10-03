@@ -1,12 +1,14 @@
 package com.pluralsight;
 
 public class Vehicle {
+    // Class members
     private long vehicleId;
     private String makeModel;
     private String color;
     private int odometerReading;
     private float price;
 
+    // Constructor
     public Vehicle(){
         vehicleId = 0;
         makeModel = " ";
@@ -14,6 +16,8 @@ public class Vehicle {
         odometerReading = 0;
         price = 0;
     }
+
+    // Overloaded constructor
     public Vehicle(long l, String s1, String s2, int i, float f){
         setVehicleId(l);
         setMakeModel(s1);
@@ -21,6 +25,8 @@ public class Vehicle {
         setOdometerReading(i);
         setPrice(f);
     }
+
+    // Setters (mutators)
     public void setVehicleId(long vehicleId) {
         this.vehicleId = vehicleId;
     }
@@ -37,6 +43,7 @@ public class Vehicle {
         this.price = price;
     }
 
+    // Getters (accessors)
     public long getVehicleId() {
         return vehicleId;
     }
